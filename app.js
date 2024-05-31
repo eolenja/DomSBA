@@ -1,32 +1,38 @@
+
+
 const leftCol = document.getElementById('leftcolumn')
+const pollForm = document.querySelector(".vote-button");
+const yesCount = document.getElementById("yes-count");
+const noCount = document.getElementById("no-count")
+let yesVotes = 0;
+let noVotes = 0;
+console.log(pollForm)
+pollForm.addEventListener("click",(e) =>{
+ 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const pollForm = 
-        document.getElementById("poll-form");
-    const yesCount = 
-        document.getElementById("yes-count");
-    const noCount = 
-        document.getElementById("no-count");
-    let yesVotes = 0;
-    let noVotes = 0;
- 
-    pollForm.addEventListener("submit", function (e) {
- 
-        e.preventDefault();
-        const formData = new FormData(pollForm);
-        const userVote = formData.get("vote");
- 
-        if (userVote === "yes") {
-            yesVotes++;
-        } else if (userVote === "no") {
-            noVotes++;
-        }
-        updateResults();
-    });
- 
-    function updateResults() {
-        yesCount.textContent = yesVotes;
-        noCount.textContent = noVotes;
-    }
+    yesCount.innerHTML = yesVotes
+    noCount.innerHTML= noVotes
+    
+    
+    const noButton = document.getElementsByClassName("no")
+    const yesButton = document.getElementsByClassName("yes")
+
+    
+    
 });
+// 
 
+
+submitButton.addEventListener('click',() => {
+    const selectedVote = document.querySelector('input[name="vote"]:checked');
+    if (selectedVote.value ==='yes') {
+        yesVotes++;
+        yesVotesCount.textContent = yesVotes;
+    } else if (selectedVote.value === 'no'){
+        noVotes++;
+        noVotesCount.textContext=noVotes
+    }
+    else
+    alert('please select an option before submitting');
+    
+}) 
