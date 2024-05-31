@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
  
     pollForm.addEventListener("submit", function (e) {
  
-        // It will help to prevent the submission of 
-        // form, so that following code can execute
         e.preventDefault();
         const formData = new FormData(pollForm);
         const userVote = formData.get("vote");
