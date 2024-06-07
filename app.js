@@ -38,7 +38,12 @@ const arr = [
     {"artist": "Logic ft. DJ Drama", "song": "Deja Vu", "review": "2/5"},
 ]
 
-arr.array.forEach(element => {
+const review  = document.getElementById("review")
+
+arr.forEach(element => { 
+    let newEl = document.createElement("p")
+    newEl.innerHTML =`[${element.artist} - ${element.song} : ${element.review}]`
+    review.appendChild (newEl)
     
 });
 
