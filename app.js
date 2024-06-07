@@ -3,6 +3,8 @@ const btn = document.createElement("button");
 btn.innerHTML = "scroll to top";
 document.body.appendChild(btn);
 
+window.open("https://open.spotify.com/")
+
 
 
 
