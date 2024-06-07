@@ -1,18 +1,24 @@
 const btn = document.createElement("button");
+console.log(btn)
 btn.innerHTML = "go to playlist on spotify";
-let button =document.body.appendChild(btn);
+let button = document.body.appendChild(btn);
 button.style.position = "relative"
 button.style.top = "550px"
 button.style.right = "200px"
 
-document.querySelector (".card1") 
+btn.addEventListener("click", (event) => {
+    event.preventDefault()
+    window.open("https://open.spotify.com/")
+    console.log('click')
+} )
 
 
 
 
 
 
-window.open("https://open.spotify.com/")
+
+
 
 const leftCol = document.getElementById('leftcolumn')
 const yesCount = document.getElementById("yes-count");
