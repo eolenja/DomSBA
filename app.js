@@ -1,6 +1,16 @@
 const btn = document.createElement("button");
-btn.innerHTML = "scroll to top";
-document.body.appendChild(btn);
+btn.innerHTML = "go to playlist on spotify";
+let button =document.body.appendChild(btn);
+button.style.position = "relative"
+button.style.top = "550px"
+button.style.right = "200px"
+
+document.querySelector (".card1") 
+
+
+
+
+
 
 window.open("https://open.spotify.com/")
 

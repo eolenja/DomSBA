@@ -48,13 +48,16 @@
     padding: 20px;
     margin-top: 20px;
   }
+  .card1
+  {
+    background-color: rgb(251, 211, 211);
+    padding: 20px;
+    margin-top: 20px;
+    width: 225%;
+  }
+
   
 
- /* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }*/
 
   .rightcolumn .card{
     width: 400px;
@@ -151,5 +154,6 @@
     font-weight: bold;
 }
 .btn {
-  color: #e371ff;
+ 
+  color: #be01ed;
 }
