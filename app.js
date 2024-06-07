@@ -1,7 +1,11 @@
 
 const btn = document.createElement("button");
-btn.innerHTML = "top";
+btn.innerHTML = "scroll to top";
 document.body.appendChild(btn);
+
+
+
+
 
 
 const leftCol = document.getElementById('leftcolumn')
@@ -11,16 +15,12 @@ const submitButton = document.getElementById("vote-button")
 let yesVotes = 0;
 let noVotes = 0;
 
-// submitButton.addEventListener("click",(e) => {
-//     yesCount.innerHTML = yesVotes
-//     noCount.innerHTML= noVotes
-    
-// });
+
 
 submitButton.addEventListener('click',(event) => {
-    event.preventDefault();
+    event.preventDefault(); 
     const selectedVote = document.querySelector('input[name="vote"]:checked');
-   // console.log(selectedVote.value)
+  
  
     try {
         if (selectedVote.value ==='yes') {
